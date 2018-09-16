@@ -12,37 +12,60 @@
         html{
             height: 100%;
         }
-        @keyframes  myfirst {
-            from {opacity:0}
-            to {opacity:100}
+        @keyframes  my01 {
+            0% {opacity:0}
+            20% {opacity:100}
         }
         h1{
             font-size: 100px;
             position:absolute;
             width:100%;
             text-align: center;
-            animation: myfirst 1s infinite;
+            animation: my01 3.15s infinite;
         }
-         @keyframes  myfirst01 {
-            from {opacity:0}
-            to {opacity:100}
+         @keyframes  my02 {
+            20% {opacity:0}
+            40% {opacity:100}
+        }
+         @keyframes  my03 {
+            40% {opacity:0}
+            60% {opacity:100}
+        }      
+         @keyframes  my04 {
+            60% {opacity:0}
+            80% {opacity:100}
+        }       
+         @keyframes  my05 {
+            80% {opacity:0}
+            100% {opacity:100}
         }
         p{
             font-size: 100px;
             position:absolute;
             width:100%;
-            text-align: center;
-            animation: myfirst01 3s infinite;
+            text-align: center;            
+        }
+        #yi{
+        animation: my02 3.15s infinite;
+        }
+        #er{
+        animation: my03 3.15s infinite;
+        }
+         #san{
+        animation: my04 3.15s infinite;
+        }
+         #si{
+        animation: my05 3.15s infinite;
         }
     </style>
 </head>
 <body>
-<audio src="wav/layzhangdeai.mp3"  autoplay="autoplay">
+<audio src="wav/layzhangdeai.mp3"  autoplay="autoplay" loop="loop">
 </audio>
 <h1>我们</h1>
-<p>亲爱的杨先生，在过去的这些日子里，我们相识相知相伴</p>
-<p>谢谢你平日里的关心爱护，要好好保持呦</p>
-<p>未来还有无数的小脾气撒娇生气，嘿嘿，提个醒儿</p>
-<p>用一句被大家用到烂的词，余生请多多指教</p>
+<p id="yi">亲爱的杨先生，在过去的这些日子里，我们相识相知相伴</p>
+<p id="er">谢谢你平日里的关心爱护，要好好保持呦</p>
+<p id="san">未来还有无数的小脾气撒娇生气，嘿嘿，提个醒儿</p>
+<p id="si">用一句被大家用到烂的词，余生请多多指教</p>
 </body>
 </html>
